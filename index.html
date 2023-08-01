@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+      integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+      crossorigin="anonymous"
+    />
+
+    <title>Donate Module || Prototype</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-step">
+        <h1>Donate for our cause</h1>
+        <p>I would like to contribute:</p>
+        <div class="input-wrapper">
+          <input type="text" id="inputDollar" />
+          <span class="dollar-sign">$</span>
+        </div>
+        <small class="mainError hidden">Field cannot be empty</small>
+        <button id="next-step">Next step</button>
+      </div>
+      <div class="personal-step hidden">
+        <i class="fa-solid fa-chevron-left"></i>
+        <div class="wrapper">
+          <h1>Personal info</h1>
+          <p>Donation total <br>
+          </p>
+          <span id="revealSum">$ 00</span>
+          <div class="form-container">
+            <label for="firstName">First name</label>
+            <input type="text" name="fName" id="firstName" placeholder="Enter your first name"/>
+            <label for="lastName">Last name</label>
+            <input type="text" name="lName" id="lastName" placeholder="Enter your last name">
+            <label for="email">Email address</label>
+            <input type="email" name="eMail" id="email" placeholder="Enter your email address">
+            <small class="error hidden">field cannot be empty</small>
+          </div>
+          <button class="donateBtn">Donate now</button>
+        </div>
+      </div>
+      <div class="succesfullyDonate hidden">
+        <div class="succesWrapepr">
+          <img src="https://cdn-icons-png.flaticon.com/128/5625/5625784.png" alt="">
+          <h1>Thank you, <span class="succesName"></span> ,for your donation of to our website</h1>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+  <script src="index.js"></script>
+  </body>
+</html>
+
+
