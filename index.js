@@ -70,12 +70,11 @@ donateButton.addEventListener("click", () => {
 
 
 $(document).ready(function() {
-    // Function to update revealSum with the value from inputDollar
     function updateRevealSum() {
       var donationAmount = $("#inputDollar").val();
       $("#revealSum").text("$ " + donationAmount);
     }
 
-    // Call the update function whenever the inputDollar changes
+    
     $("#inputDollar").on("input", updateRevealSum);
   });
